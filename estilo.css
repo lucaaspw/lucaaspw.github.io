@@ -206,4 +206,11 @@ MEDIA QUERIES
         width: 100%;
         padding: 20px;
     }
+    .mudar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+     
+    }
 }
