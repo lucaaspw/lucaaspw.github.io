@@ -38,9 +38,25 @@ nav ul {
     align-items: center;
     width: 100%;
 }
-nav ul li {
-    width: 100%;
+nav li:hover .submenu {
+    display: block;
+}
+.submenu {
+    width: 140px;
+    background-color: #4d4d4d;
+    display: none;
+    position: absolute;
+    border-radius: 3px;
+}
+.submenuitem {
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
+}
+.submenuitem:hover {
+    background-color: #878588;
+    widows: 140px;
 }
 nav ul li a {
     display: inline-block;
@@ -48,6 +64,13 @@ nav ul li a {
     width: 100%;
     text-decoration: none;
     color:#f1f1f1;
+}
+.fundo {
+    background-color: aqua;
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
 }
 
 /*
@@ -111,10 +134,14 @@ EDUCAÇÃO
     
 }
 
-#educacao  li{
+#educacao >li{
     display: flex;
     flex-direction: column;
-    padding: 5px ;
+    padding: 10px ;
+    text-align: center;
+    position: relative;
+    background-color: #f1f1f1;
+    
 
 }
 
@@ -145,6 +172,7 @@ CONTATO
 .mudar {
     text-align: initial;
     position: initial;
+    
 }
 
 /*
