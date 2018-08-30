@@ -22,7 +22,7 @@ nav {
 }
 nav > a {
     text-decoration: none;
-    color:#f1f1f1;
+    color:#f2f2f2;
     font-weight: 700;
     font-style: 30px;
     font-family: "Roboto Slab", serif;
@@ -66,7 +66,7 @@ nav ul li a {
     color:#f1f1f1;
 }
 .fundo {
-    background-color: aqua;
+    background-color: #77777a;
     display: inline-block;
     flex-direction: column;
     align-items: center;
@@ -78,10 +78,7 @@ CABEÇALHO
 */
 
 header {
-    background-image: url('imagens/serra.png');
-    background-size:cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #000000;
     color: #f2f2f2;
     display: flex;
     flex-direction: column;
@@ -105,6 +102,7 @@ SOBRE
     padding: 20px;
     color: #f1f1f1;
     background-color: rgb(2, 0, 0);
+   
 }
 
 #sobre p{
