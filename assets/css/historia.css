@@ -1,33 +1,120 @@
 body{
     margin:0;
+    padding: 0;
+    background: #a9aaa4;
 }
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
+.card
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 600px;
+    background: #fff;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(2000px);
+    box-shadow: inset 390px 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
+    transition: 1.5s;
 }
-.topo{
-    height:120px;
-    width:100%;
-    background-color:rgb(80, 85, 83);
-    text-align: center;
-    padding-top:40px;
-    color:#000;
+.card:hover 
+{
+    transform: translate(-50%, -50%) perspective(2000px) rotate(-10deg);
+    box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
 }
-.conteudo{
-    width:58%;
-    max-width: 1000px;
-    margin-left: 270px;
+.card:before
+{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #4d4d4d;
+    transform-origin: bottom;
+    transform: skewX(-45deg);
+}
+.card:after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 5px;
+    height: 100%;
+    background: #5a5959;
+    transform-origin: left;
+    transform: skewY(-45deg);
+}
+.card .imgbox 
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: left;
+    transition: 1s cubic-bezier(.07,1.47,.92,.65);
+}
+.card:hover .imgbox 
+{
+    transform: rotateY(-135deg);
+}
+.card .details 
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
     padding: 20px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: solid 1px #000;
+    z-index: -1;
 }
+.card .details p 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+.topo h1 
+{
+    margin-left: 20px;
+}
+@media (max-width: 1000px) {
+    .card 
+    {
+        box-shadow: inset 0 0 50px rgba(0,0,0,.5), 0 20px 100px rgba(0,0,0,.5);
+    }
+    .card .imgbox {
+        height: auto;
 
-.rodape{
-    background-color:rgb(80, 85, 83);
-    height:50px;
-    text-align: center;
-    line-height: 50px;
-    margin-top:0;
+    }
+   
+}
+@media (max-width: 810px) {
+    .card {
+      margin-top: 40px;
+    }
+}
+@media (max-width: 768px) {
+    .card:hover{
+        transform: translate(-50%, -50%) rotate(0);
+    }
+    .card .imgbox {
+        width: 100%;
+        height: 250px;
+        float: left;
+        display: none;
+    }
+}
+@media (max-width: 500px) {
+    .card{
+        margin-top: 0;
+        height: 700px;
+        font-size: 30px;
+        transform: translate(-50%, -50%);
+        
+    }
+    
+}
+@media (max-width: 400px) {
+    .card {
+        width: 400px;
+        height: 800px;
+    }
 }

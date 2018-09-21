@@ -4,34 +4,35 @@
    
         <title> Lucas Gonçalves</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Pacifico|Roboto+Slab:400,700" rel="stylesheet">
         <link  rel="shortcut icon" href="imagens/lukasg.png"  type="images/jpeg"/>
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/normalize.css">
         <link rel="stylesheet" href="assets/css/estilo.css" >
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
     </head>
        <body>
-
-            <nav>
-                <a href="#contato">Lucas Gonçalves</a>
-                <ul>
-                    <li>
-                        <a href="./"> HOME </a>
-                        <div class="submenu">
-                                <a href="#sobre"><div class="submenuitem">Sobre mim</div></a>
-                                <a href="#educacao"><div class="submenuitem">Educação</div></a>
-                                <a href="#contato"><div class="submenuitem">Contato</div></a>
-                        </div>
-                    </li>   
-                </ul>
-            </nav>
-
-            <header>
+           <header>
+               <div class="logo"> Lucas Gonçalves</div>
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">HOME</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Educação</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+                <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+              
+           </header>
+           <div class="sob-sobre">
                 <h1>Minha História</h1>
                 <p> Oi, meu nome é Lucas Gonçalves, tenho 23 anos, e sou 
                     estudante de programação.</p>
                     <a href="historia.html" class="botao">Ver mais</a>
-            </header>
+                </div>
+           
 
             <section id="sobre">
                 <h1>Sobre mim</h1>
@@ -42,21 +43,22 @@
                         <a href="#contato" class="botao">Entre em contato</a>
             </section>
             <section id="educacao">
-                   <h1> Educação</h1>
-                    <ul>
+                   <h2> Educação</h2>
+                    <ol>
                         <h3>PHP do zero ao profissional-B7Web</h3>
                         <p>O curso fornece diversas linguagens, mas essas são as que eu me identifico
                             mais.
                         </p>
-                        <li class="fundo">Banco de Dados</li>
                         <li class="fundo">Bootstrap v4</li>
                         <li class="fundo">HTML e HTML5</li>
                         <li class="fundo">CSS e CSS3</li>
                         <li class="fundo">JavaScript</li>
                         <li class="fundo">jQuery</li>
-                        </ul>
+                        </ol>
 
             </section>
+            
+               
             <section id="contato" >
                 <h2 class="lks">Contato</h2>
                 <div>
@@ -104,11 +106,12 @@
                                         </div>
             </section>
             <footer>
-                <h3> Desenvolvido por Lucas Gonçalves</h3>
+                <h4>Desenvolvido por Lucas Gonçalves</h4>
             </footer>
       
         </body> 
         
         <script type="text/javascript" src="assets/js/jQuery.js"></script> 
+        <script type="text/javascript" src="assets/js/script.js"></script>
         <script type="text/javascript" src="assets/js/bootstrap.bundle.min.js"></script>
 </html>
