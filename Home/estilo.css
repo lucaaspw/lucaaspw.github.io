@@ -109,3 +109,49 @@ h1, h2 ,h3{
     font-family: "Roboto Slab",Arial, Helvetica, sans-serif;
     
 }
+
+
+/*
+CONTATO
+*/
+#contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;  
+    background-color: #262626;
+    color: #f1f1f1;
+}
+.lks {
+    margin-bottom: 10px;
+    font-size: 32px;
+
+}
+#contato a {
+    text-decoration: none;
+    text-align: center;
+    margin-top: 10px; 
+    color: #f1f1f1;
+}
+#contato img {
+    width: 20px;
+    height: 20px;
+}
+
+.mudar {
+    text-align: initial;
+    position: initial;
+    
+}
+
+/*
+FOOTER
+*/
+footer{
+    text-align: center;
+    padding: 5px;
+    background-color: #4d4d4d;
+    color: #f1f1f1;
+
+}
