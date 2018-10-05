@@ -115,9 +115,9 @@ body{
 @media (max-width: 380px) {
     .card{
         width: 100%;
-        margin-top: 60px;
+        margin-top: 70px;
         height: 800px;
-        right: 20px;
+        
         
         
     }
