@@ -103,7 +103,7 @@ body{
 }
 @media screen and  (max-width: 500px) {
     .card{
-        margin-top: 0;
+        margin-top: 10;
         height: 700px;
         font-size: 30px;
         transform: translate(-50%, -50%);
@@ -115,7 +115,7 @@ body{
 @media (max-width: 380px) {
     .card{
         width: 100%;
-        margin-top: 40px;
+        margin-top: 60px;
         height: 800px;
         right: 20px;
         
