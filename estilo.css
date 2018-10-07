@@ -70,6 +70,7 @@ header nav ul li a.active
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 618px;
     background-attachment: fixed;
     background-position: center;
 }
@@ -104,9 +105,10 @@ header nav ul li a.active
         height: calc(100vh - 50px);
     }
 }
-h1, h2 ,h3{
-    margin-top: 20px;
-    font-family: "Roboto Slab",Arial, Helvetica, sans-serif;
-    
+@media (max-width: 400px){
+    .fundo >img {
+        height: 500px;
+    }
 }
+
 
